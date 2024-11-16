@@ -1,0 +1,892 @@
+
+/* start of css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  
+  body {
+  
+    background-color:#231651;
+  }
+  
+  /* nav bar styles*/
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #EEF36A;
+    box-shadow: 0px 4px 8px #070410;
+    font-family: "Teko", serif;
+  }
+  
+
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #231651;
+    font-family: "Teko", serif;
+  }
+  /* nav bar text styles*/
+  .navtext a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #231651;
+    font-size: 1rem;
+    font-family: "Teko", serif;
+  }
+  
+  .searchbutton button {
+    background-color: #231651;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: x-large;
+    border: 1px solid #231651;
+    border-radius: 16px;
+    font-family: "Teko", serif;
+  }
+  /* movie 1 div layout and style in desktop*/
+  .movie-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 48px auto;
+    max-width: 900px;
+    background-color: #ffffff;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    box-shadow: 4px 4px 8px #4dccbd;
+  
+  }
+
+  .movie-1-poster {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+   /* movie 1 image displayed inside the poster*/
+  .movie-1-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    
+  }
+  
+  .movie-1-description  {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 16px;
+      padding-left: 16px;
+      padding-right: 16px;
+      gap: 48px;
+  }
+  
+  
+  .movie-1-description p {
+    color: #231651;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+   font-family: "Lato", serif
+  }
+   /* movie 1 watch button style */
+  .watchbutton-1 {
+    background-color: #4dccbd;
+    color: #231651;
+    padding: 1rem 5rem;
+    cursor: pointer;
+    font-size: xx-large;
+    border: 1px solid #231651;
+    border-radius: 16px;
+    font-family: "Teko", serif;
+  }
+ 
+   /* movie 2 and 3 section layout and style*/
+  .movie2-3
+  {
+    display: flex;  /* all posters under this section are displayed in fles*/
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 48px auto;
+    gap: 1rem;
+  }
+   /* movie 2 nd movie 3 div layout and style in desktop*/
+  .movie-2 {
+      background-color: #ffffff;
+      overflow: hidden;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 4px 4px 8px #4dccbd;
+      
+    
+    }
+    .movie-2-poster img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  
+  .movie-3 {
+    background-color: #ffffff;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px 8px #4dccbd;
+    
+  
+  }
+  .movie-2-description {
+    padding-bottom: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .movie-2-description p {
+    color: #231651;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: "Lato", sans-serif;
+  }
+  .watchbutton-2 {
+    background-color: #4dccbd;
+    color: #231651;
+    padding: 16px 155px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid #231651;
+    border-radius: 16px;
+    font-family: "Teko", serif;
+  }
+  .movie-3-poster img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .movie-3-description {
+    padding-bottom: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+  
+  
+  .movie-3-description p {
+    color: #231651;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: "Lato", sans-serif;
+  }
+  
+  
+  .watchbutton-3 {
+    background-color: #4dccbd;
+    color: #231651;
+    padding: 16px 155px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid #231651;
+    border-radius: 16px;
+    font-family: "Teko", serif;
+  }
+  /*movie4,5,6 have almost sae layout and styles*/
+  .movie-4{
+    display: flex;
+    flex-direction: column; /* displayed in column*/
+    gap: 2rem;
+    padding: 2rem 0;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .movie4{
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 4px 4px 8px #4dccbd;
+  }
+  .movie-4-poster img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+  }
+  .movie-4-description{
+    width: 50%;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 220px;
+
+  }
+  .movie-4-description p{
+    height: 120px;
+    margin: 1px -37px 28px;
+    padding: 57px;
+    color: #231651;
+    font-family: "Lato", sans-serif
+  }
+  .watchbutton-4{
+    background-color: #4dccbd;
+    color: #231651;
+    padding: 12.5px 10px;
+    padding-bottom: 10px;
+    margin-bottom: 13px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #231651;
+    border-radius: 16px;
+    font-family: "Teko", serif;
+  }
+  .movie-5{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .movie5{
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 4px 4px 8px #4dccbd;
+  }
+  .movie-5-poster img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+  }
+  .movie-5-description{
+    width: 50%;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 220px;
+
+  }
+  .movie-5-description p{
+    height: 120px;
+    margin: 1px -37px 28px;
+    padding: 57px;
+    color: #231651;
+    font-family: "Lato", sans-serif
+  }
+  .watchbutton-5{
+    background-color: #4dccbd;
+    color: #231651;
+    padding: 12.5px 10px;
+    padding-bottom: 10px;
+    margin-bottom: 13px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #231651;
+    border-radius: 16px;
+    font-family: "Teko", serif;
+
+  }
+  .movie-6{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .movie6{
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 4px 4px 8px #4dccbd;
+  }
+  .movie-6-poster img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+  }
+  .movie-6-description{
+    width: 50%;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 220px;
+
+  }
+  .movie-6-description p{
+    height: 120px;
+    margin: 1px -37px 28px;
+    padding: 57px;
+    color: #231651;
+    font-family: "Lato", sans-serif
+  }
+  .watchbutton-6{
+    background-color: #4dccbd;
+    color: #231651;
+    padding: 12.5px 10px;
+    padding-bottom: 10px;
+    margin-bottom: 13px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #231651;
+    border-radius: 16px;
+    font-family: "Teko", serif;
+
+  }
+  /* tablet section is set to be not displayed in desktop and mobile as it is used only for tablet*/
+  .tablet{
+    display: none;
+  }
+  /* mobile responsivness*/
+  @media (max-width: 720px) {
+    
+    .navtext {
+        display: none; /* as per wireframe no navigation bar is appeared with mobile responsiveness*/
+    }
+  
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+/* tablet section is set to be not displayed in desktop and mobile as it is used onlyfor tablet*/
+    .tablet{
+      display: none;
+    }
+  
+    .logo {
+        font-size: 1.2rem;
+    }
+  
+    .searchbutton button {
+        font-size: medium;
+        padding: 0.3rem 0.7rem;
+    }
+
+    .movie-1-description {
+      flex-direction: column; /* change of flex direction to column as per wireframe*/
+      padding: 1rem;
+      max-width: 100%;
+  }
+  .movie-1-poster{
+      width: 100%;         
+      height: auto;         
+      aspect-ratio: 1 / 1;  
+      margin-bottom: -188px;
+  }
+
+  
+    .movie-1-poster img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;    
+     }
+
+  .movie-1-description {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0rem;
+    padding-bottom: 217px;
+  }
+
+  .movie-1-description .watchbutton-1 {
+      width: 90%;
+      padding: 0.8rem;  /* adjusted acordingly as button had diffrent padding width and margins in desktop vesrion*/
+  }
+  .movie2-3{
+    flex-direction: column; /* change of flex direction to column as per wireframe*/
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .movie-4{
+    flex-direction: column;/* change of flex direction to column as per wireframe*/
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .movie-5{
+    flex-direction: column; /* change of flex direction to column as per wireframe*/
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .movie-6{
+    flex-direction: column; /* change of flex direction to column as per wireframe*/
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .movie4{
+    flex-direction: column; 
+      align-items: center;
+      max-width: 100%;
+  }
+  .movie5{
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .movie6{
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+
+  }
+
+  .movie-4-poster img{
+    width: 100%;
+    height: auto;
+  }
+
+  .movie-5-poster img{
+    width: 100%;
+      height: auto;
+
+  }
+
+  .movie-6-poster img{
+    width: 100%;
+      height: auto;
+  }
+
+  .movie-4-description{
+    width:100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 220px;
+    align-items: center;
+  }
+  .movie-5-description{
+    width:100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 220px;
+    align-items: center;
+  }
+  .movie-6-description{
+    width:100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 220px;
+    align-items: center;
+  }
+  .watchbutton-4{
+    width: 90%;  /* adjusted acordingly as button had diffrent padding width and margins in desktop vesrion*/
+      padding: 0.8rem;
+      margin-top: -152px;
+  }
+
+  .watchbutton-5{
+    width: 90%; /* adjusted acordingly as button had diffrent padding width and margins in desktop vesrion*/
+      padding: 0.8rem;
+      margin-top: -152px;
+  }
+
+  .watchbutton-6{
+    width: 90%;
+      padding: 0.8rem; /* adjusted acordingly as button had diffrent padding width and margins in desktop vesrion*/
+      margin-top: -152px;
+  }
+  }
+/* tablet responsivenss*/
+  @media (min-width: 720px) and (max-width: 1024px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.8rem;
+    }
+
+    .navtext a {
+        font-size: 0.9rem;
+    }
+
+    .searchbutton button {
+        font-size: large;
+    }
+
+   
+    .movie-1-tab
+  {
+    width: 90%;
+    max-width: 900px;
+    margin: 1rem auto;
+  }
+  .movie-2-tab
+  {
+    width: 90%;
+    max-width: 900px;
+    margin: 1rem auto;
+  }
+  .movie-3-tab
+  {
+    width: 90%;
+    max-width: 900px;
+    margin: 1rem auto;
+  }
+  .movie-4-tab
+  {
+    width: 90%;
+    max-width: 900px;
+    margin: 1rem auto;
+  }
+  .movie-5-tab
+  {
+    width: 90%;
+    max-width: 900px;
+    margin: 1rem auto;
+  }
+  .movie-6-tab
+  {
+    width: 90%;
+    max-width: 900px;
+    margin: 1rem auto;
+  }
+
+    .tablet {
+        display: grid;     /* displayed in grid with 2/2 format*/
+        grid-template-columns: repeat(2, 1fr); /* adjusments of the grid */
+        gap: 1.5rem;
+        width: 90%;
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+   
+.movie-1-tab {
+display: flex;
+flex-direction: column;
+background-color: #ffffff;
+box-shadow: 4px 4px 8px #4dccbd;
+width: 100%;
+margin: 0;
+}
+.movie-2-tab {
+display: flex;
+flex-direction: column;
+background-color: #ffffff;
+box-shadow: 4px 4px 8px #4dccbd;
+width: 100%;
+margin: 0;
+}
+.movie-3-tab {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 8px #4dccbd;
+  width: 100%;
+  margin: 0;
+}
+.movie-4-tab {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 8px #4dccbd;
+  width: 100%;
+  margin: 0;
+}
+.movie-5-tab {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 8px #4dccbd;
+  width: 100%;
+  margin: 0;
+}
+.movie-6-tab {
+display: flex;
+flex-direction: column;
+background-color: #ffffff;
+box-shadow: 4px 4px 8px #4dccbd;
+width: 100%;
+margin: 0;
+}
+
+    .movie-1-poster-tab img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .movie-2-poster-tab img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+    .movie-3-poster-tab img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+  .movie-4-poster-tab img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.movie-5-poster-tab img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.movie-6-poster-tab img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.movie-1-description-tab {
+      padding: 1rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  }
+  
+  .movie-2-description-tab {
+      padding: 1rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  }
+  
+  .movie-3-description-tab {
+      padding: 1rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  }
+  
+  .movie-4-description-tab {
+      padding: 1rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  }
+  
+  .movie-5-description-tab {
+      padding: 1rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  }
+  
+  .movie-6-description-tab {
+      padding: 1rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  }
+.movie-1-description-tab p {
+      margin: 0;
+      padding: 0;
+      height: auto;
+      color: #231651;
+  }
+  
+  .movie-2-description-tab p {
+      margin: 0;
+      padding: 0;
+      height: auto;
+      color: #231651;
+  }
+  
+  .movie-3-description-tab p {
+      margin: 0;
+      padding: 0;
+      height: auto;
+      color: #231651;
+  }
+  
+  .movie-4-description-tab p {
+      margin: 0;
+      padding: 0;
+      height: auto;
+      color: #231651;
+  }
+  
+  .movie-5-description-tab p {
+      margin: 0;
+      padding: 0;
+      height: auto;
+      color: #231651;
+  }
+  
+  .movie-6-description-tab p {
+      margin: 0;
+      padding: 0;
+      height: auto;
+      color: #231651;
+  }
+.watchbutton-1-tab {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0;
+      font-size: 1rem;
+      background-color: #4dccbd;
+      color: #231651;
+      border: 1px solid #231651;
+      border-radius: 16px;
+      cursor: pointer;
+  }
+  
+  .watchbutton-2-tab {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0;
+      font-size: 1rem;
+      background-color: #4dccbd;
+      color: #231651;
+      border: 1px solid #231651;
+      border-radius: 16px;
+      cursor: pointer;
+  }
+  
+  .watchbutton-3-tab {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0;
+      font-size: 1rem;
+      background-color: #4dccbd;
+      color: #231651;
+      border: 1px solid #231651;
+      border-radius: 16px;
+      cursor: pointer;
+  }
+  
+  .watchbutton-4-tab {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0;
+      font-size: 1rem;
+      background-color: #4dccbd;
+      color: #231651;
+      border: 1px solid #231651;
+      border-radius: 16px;
+      cursor: pointer;
+  }
+  
+  .watchbutton-5-tab {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0;
+      font-size: 1rem;
+      background-color: #4dccbd;
+      color: #231651;
+      border: 1px solid #231651;
+      border-radius: 16px;
+      cursor: pointer;
+  }
+  
+  .watchbutton-6-tab {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0;
+      font-size: 1rem;
+      background-color: #4dccbd;
+      color: #231651;
+      border: 1px solid #231651;
+      border-radius: 16px;
+      cursor: pointer;
+  }
+.movie-1 {
+      display: none;
+  }
+  
+  .movie-2 {
+      display: none;
+  }
+  
+  .movie-3 {
+      display: none;
+  }
+  
+  .movie-4 {
+      display: none;
+  }
+  
+  .movie-5 {
+      display: none;
+  }
+  
+  .movie-6 {
+      display: none;
+  }
+  
+.movie2-3 {
+      display: none;
+  }
+  
+  .movie2-3-tab {
+      display: none;
+  }
+  
+  .movie2-3-tab1 {
+      display: none;
+  }
+
+  .movie-2-tab {
+      display: flex;
+      width: 100%;
+  }
+  
+  .movie-3-tab {
+      display: flex;
+      width: 100%;
+  }
+  
+  .movie-4-tab {
+      flex-direction: column;
+  }
+  
+  .movie-5-tab {
+      flex-direction: column;
+  }
+  
+  .movie-6-tab {
+      flex-direction: column;
+  }
+}
+
+
+  
